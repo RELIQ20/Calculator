@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel = "stylesheet" href="calculator.css"></style>
+</head>
+<body>
+   <div class = 'container'>
+    <input type="text" id = 'display' readonly/>
+    <div class = "midbox">
+        <button id = 'back' style="color: #06D001; font-weight: bold;background-color: black;" onclick="backspace()"><</button>
+    </div>
+<hr>
+<br>
+    <div class="pad">
+        <button id = 'clear' onclick = "cleared()">C</button>
+        <button id = 'symbol' onclick = "parenthesis()">( )</button>
+        <button id = 'symbol' onclick = "append('%')">%</button>
+        <button id = 'symbol' onclick = "append('/')">÷</button>
+
+        <button id = 'number' onclick = "append('7')">7</button>
+        <button id = 'number' onclick = "append('8')">8</button>
+        <button id = 'number' onclick = "append('9')">9</button>
+        <button id = 'symbol' onclick = "append('*')">x</button>
+
+        <button id = 'number' onclick = "append('4')">4</button>
+        <button id = 'number' onclick = "append('5')">5</button>
+        <button id = 'number' onclick = "append('6')">6</button>
+        <button id = 'symbol' onclick = "append('-')">-</button>
+
+        <button id = 'number' onclick = "append('1')">1</button>
+        <button id = 'number' onclick = "append('2')">2</button>
+        <button id = 'number' onclick = "append('3')">3</button>
+        <button id = 'symbol' onclick = "append('+')">+</button>
+
+        <button id = 'number' onclick = "toggleSign()">+/-</button>
+        <button id = 'number' onclick = "append('0')">0</button>
+        <button id = 'number' onclick = "append('.')">.</button>
+        <button id = 'symbol' onclick = "calculate()" style="background-color: #06D001; color: white;">=</button>
+    </div>
+   </div> 
+    <script src="calculator.js" defer></script>
+</body>
+</html>
