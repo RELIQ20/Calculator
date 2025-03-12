@@ -65,3 +65,8 @@ button:hover {
     font-weight: bold;
     background-color: rgb(85, 86, 87);
 }
+
+#clear:hover,#symbol:hover,#number:hover{
+    background-color: rgb(180, 180, 180);
+    transition: ease-in-out;
+}
